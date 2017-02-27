@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    normalize.css remueve las diferenecia que hay entre browsers segun los defaults de css predeterminados que utilizan. 
+    Revisa: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css este es el archivo donde van tus estilos, tu css
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+
+  <title></title>
+</head>
+<body>
+  <div class="container message">
+    <!--link para cerrar sesión-->
+    <% if session[:user_id] %>
+      <p><a href="/logout">Cierra Sesión</a></p>
+    <% end %>
+    <!--mensaje de error-->
+    <% if session[:errors] %>
+      <p><%= session[:errors] %></p>
+      <% session[:errors].clear %>
+    <% end %>
+  </div>
+    <%= yield %>
+  <script src="/js/application.js"></script>  
+</body>
+</html>

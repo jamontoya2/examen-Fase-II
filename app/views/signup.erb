@@ -1,0 +1,15 @@
+<h1>Sign Up</h1>
+<% if @errors %>
+  <p><%= @errors %></p>
+<% end %>
+<div class="container" id="form">
+	<form action="/signup" method="post">
+		<label >Name:</label>
+    <input name="user_name" type="text" id="usuario" placeholder="Name">
+    <label >Email:</label>
+    <input name="user_email" type="text" id="usuario" placeholder="Email">
+    <label>Password:</label>
+    <input name="user_password" type="password" id="contrasenia" placeholder="Password">
+    <input type="submit" name="submit" value="Go">
+  </form>
+</div> 

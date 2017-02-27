@@ -1,0 +1,31 @@
+<h1>Winners Record</h1>
+
+<div class="centerTable">
+	<table class="hovertable">
+		<tr>
+			<th>User</th>
+			<th>Round</th>
+			<th>Score</th>
+		</tr>
+    <%User.all.each do |user| %>
+			<%Game.all.each_with_index do |game, index| %>
+				<%if user.id == game.user_id%>
+						<% if game.score == "Win" %>
+							<tr>
+							<td><%=user.name%></td>
+			    		<td><%=index + 1%></td>
+							<td><%=game.score %></td>
+							</tr>
+						<%end%>	
+				<%end%>
+			<%end%>
+		<%end%>	
+	</table>
+</div>
+
+<aside>
+  <h3></h3>
+  <form method="post" action="/new_game">
+    <input type="submit" value="Play">
+  </form>
+</aside>

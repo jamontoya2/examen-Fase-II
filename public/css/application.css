@@ -1,0 +1,324 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+}
+
+.container.title {
+  text-align: center;
+  font-size: 23px;
+  padding-top: 20px;
+}
+
+.container.message {
+  text-align: center;
+  font-size: 15px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 27px;
+  font-weight: normal;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#record {
+  font-size: 16px;
+  
+}
+
+/*css for table*/
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.hovertable {
+  font-family: verdana,arial,sans-serif;
+  font-size:11px;
+  color:#333333;
+  border-width: 1px;
+  border-color: #999999;
+  border-collapse: collapse;
+}
+table.hovertable th {
+  background-color:#c3dde0;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9c6c9;
+  font-weight: bold;
+}
+table.hovertable tr {
+  background-color:#d4e3e5;
+}
+table.hovertable td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9c6c9;
+  text-align: center;
+}
+
+div.centerTable{
+  text-align: center;
+  padding-top: 20px;
+}
+
+ 
+
+div.centerTable table {
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+/*css for submarine game*/
+
+html, body, div, span, applet, object, iframe,
+h1, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* GRID */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* CLEARFIX */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/* STARTS HERE */
+
+h1 {
+  text-align: center;
+  width: 602px;
+  margin: 0 auto;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 10px 0;
+  letter-spacing: 3px;
+  background: #6599FF;
+  border: 1px solid #097054;
+}
+
+#container {
+  margin: 0 auto;
+  border: 1px solid #663300;
+  width: 602px;
+  height: 602px;
+  background: rgb(255, 255, 255);
+}
+
+.cell {
+  width: 190px;
+  height: 190px;
+  float: left;
+  background: #FE7E25;
+  margin: 5px;
+  text-align: center;
+  font-size: 150px;
+  color: #097054;
+}
+
+.cell:hover {
+  border: 2px solid #991000;
+  cursor: pointer;
+}
+
+/* ASIDE */
+
+body {
+  position: relative;
+  font-family: arial, sans-serif;
+}
+
+aside {
+  position: absolute;
+  width: 120px;
+  top: 100px;
+  right: 15%;
+  text-align: left;
+}
+
+aside a {
+  padding-left: 21px;
+}
+
+h3 {
+  padding: 10px 0 30px 0;
+  font-size: 1.5em;
+}
+
+#play2 {
+  font-size: 2em;
+  border: 1px solid #AAA;
+  width: 120px;
+  height: 60px;
+  color: blue;
+  background: yellow;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+#play2:hover {
+  color: yellow;
+  background: blue;
+}
+
+#play3 {
+  font-size: 23px;
+  border: 1px solid #AAA;
+  width: 120px;
+  height: 60px;
+  color: blue;
+  background: yellow;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+#play3:hover {
+  color: yellow;
+  background: blue;
+}
+
+
+#win {
+  padding-top: 20px;
+  color: green;
+  font-size: 50px;
+}
+
+.content {
+    width:600px;
+    height:400px;
+    line-height:400px;
+    margin:0px auto;
+    text-align:center;
+   
+}
+
+img {
+    vertical-align:middle;
+    width: 600px;
+    height: 400px;
+}
+
+.myButton {
+  background-color: #4CAF50;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  width: 168px;
+}
+.myButton:hover {
+  background-color: #45a049;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+

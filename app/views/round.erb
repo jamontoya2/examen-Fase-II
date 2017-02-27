@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Welcome <%= current_user.name %></h2>
+</div>
+
+<h1>Your Score by Rounds</h1>
+
+<div class="centerTable">
+	<% if @rounds.count != 0 %>
+		<table class="hovertable">
+		<tr>
+			<th>Round</td>
+			<th>Score</td>
+		</tr>
+		<%Game.where(user_id: current_user.id).each_with_index do |item, index| %>
+			<tr>
+				<td>
+					<%=index + 1%>
+				</td>
+				<td>	
+					<%=item.score%>
+				</td>					
+			</tr>	
+		<%end%>
+		</table>
+	<% else %>
+	  <h3>No rounds for this player!</h3>
+	<% end %>
+</div>
+<aside>
+  <h3></h3>
+  <form method="post" action="/new_game">
+    <input type="submit" value="Play Again">
+  </form>
+</aside>

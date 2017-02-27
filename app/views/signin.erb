@@ -1,0 +1,13 @@
+<h1>Sign In</h1>
+<% if @errors %>
+  <p><%= @errors %></p>
+<%end%>
+<div class="container" id="form">
+	<form action="/signin" method="post">
+	<label >Email:</label></p>
+  <input name="user_mail" type="text" placeholder="Email">
+  <label>Contraseña:</label>
+  <input name="user_password" type="password" placeholder="Password">
+  <input type="submit" name="submit" value="Go">
+  </form>
+</div> 
